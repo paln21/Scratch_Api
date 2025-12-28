@@ -32,8 +32,8 @@ You can log in using your Scratch username/password or use an existing `X-Token`
 
 ```bash
 npm install axios axios-cookie-jar-support tough-cookie inquirer@8
-Note: We specify inquirer@8 to ensure compatibility with CommonJS (require).
 ```
+Note: We specify inquirer@8 to ensure compatibility with CommonJS (require).
 ### Usage
 Run the script with the following command:
 
