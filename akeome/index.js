@@ -1,6 +1,6 @@
 // action_sender.js
 const axios = require('axios');
-const { wrapper } = require('axios-cookie-jar-support');
+const { wrapper } = require('axios-cookiejar-support');
 const { CookieJar } = require('tough-cookie');
 
 // 環境変数のチェック
@@ -73,7 +73,13 @@ async function main() {
             }
         });
 
-        console.log('✅ 送信成功！ 終了します。');
+        if (response.status === 200) {
+            console.log('✅ 送信成功！');
+            // 成功したHTMLが返ってくるので、念のためログに出しても良い
+            // console.log(response.data); 
+        } else {
+            console.log(`⚠️ 完了しましたがステータスコードが ${response.status} です。`);
+        }
 
     } catch (e) {
         console.error('❌ 実行エラー');
