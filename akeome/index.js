@@ -2,7 +2,7 @@ require('dotenv').config();
 const axios = require('axios');
 
 // 環境変数から設定を読み込む
-const TARGET_USERNAME = process.env.TARGET_USER || 'supp0n'; 
+const TARGET_USERNAME = process.env.TARGET_USER || ''; 
 const MY_SESSION_ID = process.env.SCRATCH_SESSION_ID;
 const MY_CSRF_TOKEN = process.env.SCRATCH_CSRF_TOKEN;
 const MESSAGE = 'TEST';
