@@ -27,4 +27,4 @@ jobs:
           # GitHub Secretsから値を注入
           SCRATCH_SESSION_ID: ${{ secrets.SCRATCH_SESSION_ID }}
           SCRATCH_CSRF_TOKEN: ${{ secrets.SCRATCH_CSRF_TOKEN }}
-          TARGET_USER: '送信相手のユーザー名' # ここに直接書くか、Secretsに入れてもOK
+          TARGET_USER: 'suppon' # ここに直接書くか、Secretsに入れてもOK
