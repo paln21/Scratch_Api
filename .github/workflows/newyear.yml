@@ -19,10 +19,10 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm install
+        run: cd akeome && npm install
 
       - name: Send Message
-        run: node akeome/index.js
+        run: cd akeome && node index.js
         env:
           # GitHub Secretsから値を注入
           SCRATCH_SESSION_ID: ${{ secrets.SCRATCH_SESSION_ID }}
