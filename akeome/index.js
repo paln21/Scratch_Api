@@ -45,7 +45,7 @@ async function main() {
         if (response.status === 200) {
             console.log('✅ 送信成功！');
             // 成功したHTMLが返ってくるので、念のためログに出しても良い
-            // console.log(response.data); 
+            console.log(response.data); 
         } else {
             console.log(`⚠️ 完了しましたがステータスコードが ${response.status} です。`);
         }
